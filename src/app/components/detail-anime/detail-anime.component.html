@@ -4,8 +4,10 @@
   </div>
   <div class="contenedor">
     <div class="detail">
-      <p class="title">{{ anime_selected.title }}</p>
-      <p class="title2">{{ anime_selected.title_japanese }}</p>
+      <div>
+        <p class="title">{{ anime_selected.title }}</p>
+        <p class="title2">{{ anime_selected.title_japanese }}</p>
+      </div>
       <img
         [src]="anime_selected?.images?.jpg?.image_url"
         alt="{{ anime_selected.title }}"
