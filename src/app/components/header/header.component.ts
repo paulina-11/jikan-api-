@@ -25,24 +25,28 @@ export class HeaderComponent implements OnInit {
     // this.scrollAnimations();
     gsap.to('#bg', {
       scrollTrigger: {
+        trigger: '#bg',
         scrub: 1,
       },
       scale: 1.5,
     });
     gsap.to('#man', {
       scrollTrigger: {
+        trigger: '#man',
         scrub: 1,
       },
       scale: 0.5,
     });
     gsap.to('#luna', {
       scrollTrigger: {
+        trigger: '#luna',
         scrub: 1,
       },
       x: -200,
     });
     gsap.to('#texto', {
       scrollTrigger: {
+        trigger: '#texto',
         scrub: 1,
       },
       y: 500,
