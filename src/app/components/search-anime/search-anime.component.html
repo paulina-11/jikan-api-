@@ -1,0 +1,18 @@
+<section class="separacion">
+  <form class="formulario">
+    <input
+      #inputSearchAnime
+      autofocus
+      type="text"
+      placeholder="Busca un anime"
+      name="search"
+    />
+    <button
+      type="button"
+      class="boton"
+      (click)="search(inputSearchAnime.value)"
+    >
+      Buscar
+    </button>
+  </form>
+</section>

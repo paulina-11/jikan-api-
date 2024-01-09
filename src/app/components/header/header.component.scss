@@ -1,0 +1,65 @@
+.primario {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.8s;
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    background-color: linear-gradient(to top, #0000, transparent);
+    z-index: 1;
+  }
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+  }
+  .personaje {
+    top: 43%;
+    object-fit: contain;
+  }
+  #texto {
+    position: relative;
+    color: #fff;
+    font-size: 10vw;
+    .subname {
+      color: rebeccapurple;
+      background-color: rgba(255, 255, 255, 0.764);
+      padding: 5px 20px;
+      border-radius: 10px;
+    }
+  }
+  .luna {
+    max-width: 350px;
+    max-height: 350px;
+  }
+}
+.secundario {
+  position: relative;
+  min-height: 500px;
+  padding: 100px;
+  .content {
+    position: relative;
+    z-index: 2;
+    h2 {
+      font-size: 3.5rem;
+      margin-bottom: 10px;
+      color: #20496a;
+    }
+    p {
+      font-size: 1.2em;
+      color: #f5f7f8;
+    }
+  }
+}

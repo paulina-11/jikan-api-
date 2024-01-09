@@ -1,0 +1,15 @@
+<section class="contenedor">
+  <div *ngIf="anime_results.length > 0" class="cards">
+    <div
+      *ngFor="let animes of anime_results"
+      class="card"
+      [routerLink]="['/detail/' + animes.mal_id]"
+    >
+      <img [src]="animes.images['jpg'].image_url" alt="nombre anime" />
+      <p>{{ animes.title }}</p>
+    </div>
+  </div>
+  <div *ngIf="anime_results.length < 0" class="error">
+    <p>Sin resultados ...</p>
+  </div>
+</section>

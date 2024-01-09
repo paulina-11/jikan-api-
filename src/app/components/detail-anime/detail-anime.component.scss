@@ -1,0 +1,72 @@
+.contenedor {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0;
+  .title {
+    font-size: 4.5vw;
+    font-weight: bolder;
+    letter-spacing: 0.7vw;
+    text-align: center;
+    line-height: 70px;
+  }
+  .title2 {
+    font-size: 2vw;
+    margin: 12px 0 22px 0;
+    text-align: center;
+    line-height: 50px;
+  }
+  .detail {
+    max-width: 640px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .sinopsis {
+      margin: 35px 0;
+      font-size: 16px;
+      text-align: justify;
+      letter-spacing: 1px;
+      line-height: 30px;
+    }
+    .generos {
+      margin: 40px 0 0 0;
+      display: flex;
+      width: 100%;
+      justify-content: space-evenly;
+      p {
+        background-color: rgba(11, 137, 246, 0.559);
+        color: white;
+        padding: 10px 30px;
+        border-radius: 20px 30px;
+        &:hover {
+          background-color: rgba(11, 136, 246, 0.971);
+          color: white;
+        }
+      }
+    }
+  }
+  img {
+    max-width: 50%;
+  }
+}
+
+.nav {
+  padding: 30px;
+  cursor: pointer;
+  background-color: rgba(40, 46, 50, 0.563);
+  width: 100%;
+  .inicio {
+    color: aliceblue;
+    font-size: 25px;
+    &:hover {
+      color: rgb(166, 99, 233);
+    }
+    span {
+      color: rebeccapurple;
+      &:hover {
+        color: rgb(166, 99, 233);
+      }
+    }
+  }
+}

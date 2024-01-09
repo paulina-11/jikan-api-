@@ -1,0 +1,24 @@
+<section>
+  <div class="nav">
+    <p [routerLink]="['']" class="inicio">Anime<span>WiKi</span></p>
+  </div>
+  <div class="contenedor">
+    <div class="detail">
+      <p class="title">{{ anime_selected.title }}</p>
+      <p class="title2">{{ anime_selected.title_japanese }}</p>
+      <img
+        [src]="anime_selected?.images?.jpg?.image_url"
+        alt="{{ anime_selected.title }}"
+      />
+      <div class="generos">
+        <div *ngFor="let genero of anime_selected.genres">
+          <p>{{ genero.name }}</p>
+        </div>
+      </div>
+      <div class="sinopsis">
+        <p>{{ anime_selected.synopsis }}</p>
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</section>
